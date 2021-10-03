@@ -1,0 +1,51 @@
+21.10.02
+
+======================================================================================================================================
+
+[01] 실습
+W3School 사용해서 SQL 반복학습 하는 것이 목표
+- (해외) https://www.w3schools.com/sql/default.asp
+- (국내) https://programmers.co.kr/learn/challenges?tab=sql_practice_kit
+
+실습예제 (SQL in W3Schools)
+1. Table에서 Data 가져오기
+  SELECT data FROM table; (= table에서, data를 가져오겠다.)
+
+2. Table에서 Data를 중복 없이 가져오기 
+  SELECT DISTINCT data FROM table; (= table에서, data를 중복되지 않게 가져오겠다.)
+
+3. 내림차순으로 정렬하기 
+  SELECT * FROM Customers ORDER BY CustomerID DESC; (= Customers table에서 CustomerID를 내림차순으로 정렬)
+
+4. 오름차순으로 정렬하기 
+  SELECT * FROM Customers ORDER BY CustomerID ASC; (= Customers table에서 CustomerID를 오름차순으로 정렬)
+
+5. 별칭 부여하기 
+  1) As 사용
+    SELECT CustomerName AS 회원이름; (= CustomerName이라는 data를 "회원이름"이라는 별칭 지정)
+  2) Space
+    SELECT CustomerID 회원번호, CustomerName 회원이름
+    
+6. 산술연산
+  1) 단순연산
+    - SELECT 1+1;
+    - SELECT 1-1;
+    - SELECT 1*1;
+    - SELECT 1/1;
+  2) Column 연산
+    - SELECT CustomerID + 100 FROM Customers;
+    - SELECT CustomerID % 2 FROM Customers;
+      # CustomerID를 2로 나눈 나머지 값을 보여줌
+    - SELECT ProductName AS 제품이름, Price AS 기존가, Price*0.2 AS 할인된가격, Price*0.8 AS 최종가 FROM Products
+      # 제품이름, 기존가, 할인된가격, 최종가를 보여줌
+    - SELECT Country || City || Address FROM Customers;
+      # 나라, 도시, 주소를 합쳐서 하나의 주소로 보여줌
+    - SELECT Country || ' ' || City || ' ' || Address FROM Customers;
+      # (공백을 첨부하여) 나라, 도시, 주소를 합쳐서 하나의 주소로 보여줌
+    - SELECT Country || ' ' || City || ' ' || Address AS 주소 FROM Customers;
+      # (공백을 첨부하여) 나라, 도시, 주소를 합쳐서 하나의 주소로 보여주고, 이를 "주소"라고 이름 붙힘.
+
+7. 논리연산
+  1) True and False = False
+    # and = 논리 "곱"
+  2) 
