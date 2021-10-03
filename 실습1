@@ -46,6 +46,16 @@ W3School 사용해서 SQL 반복학습 하는 것이 목표
       # (공백을 첨부하여) 나라, 도시, 주소를 합쳐서 하나의 주소로 보여주고, 이를 "주소"라고 이름 붙힘.
 
 7. 논리연산
+  # 쉽게이해: True == 1, False == 0, And == 곱, Or == 합, Not == 반대
   1) True and False = False
     # and = 논리 "곱"
-  2) 
+  2) True or False = True
+    # or = 논리 "합"
+  3) not True = False
+    # not = 반대
+  4) 실습
+    - SELECT 1 AND 2;
+    - SELECT * FROM Customers WHERE CustomerID BETWEEN 30 AND 50;
+      # CustomerID가 30 ~ 50 사이에 있는 값을 모두 출력 (30, 50 모두 포함)
+    - SELECT * FROM Customers WHERE CustomerID IN (10, 20, 30);
+      # CustomerID가 10, 20, 30인 값만 출력
