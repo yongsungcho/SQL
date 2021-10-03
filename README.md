@@ -1,2 +1,3 @@
 # SQL
-SQL 학습노트
+Just a simple SQL studying note...
+Nothing Special. As Usual.
